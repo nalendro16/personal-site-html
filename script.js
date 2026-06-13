@@ -33,11 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let current = ''
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop
-      const sectionHeight = section.clientHeight
+      const topsection = section.offsetTop
       const navbarHeight = document.querySelector('.neo-navbar').offsetHeight
 
-      if (scrollY >= sectionTop - navbarHeight - 50) {
+      if (scrollY >= topsection - navbarHeight - 50) {
         current = section.getAttribute('id')
       }
     })
