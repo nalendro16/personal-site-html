@@ -1,7 +1,6 @@
 :root {
   --knicks-blue: #006bb6;
   --knicks-orange: #f58426;
-  --k-black: #000000;
 }
 
 html {
@@ -12,20 +11,20 @@ html {
 ::-webkit-scrollbar {
   width: 22px;
   background-color: #f4f4f0;
-  border-left: 4px solid var(--k-black);
+  border-left: 4px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--knicks-blue);
+  border: 4px solid black;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--knicks-blue);
-  border: 4px solid var(--k-black);
-}
-
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--knicks-orange);
+  background-color: #f58426;
 }
 
 body {
@@ -36,7 +35,7 @@ body {
 .neo-navbar {
   background-color: #ffffff;
   padding: 16px 0;
-  border-bottom: 4px solid var(--k-black);
+  border-bottom: 4px solid #000;
 }
 
 .neo-brand {
@@ -51,9 +50,9 @@ body {
 }
 
 .neo-brand:hover {
-  border: 3px solid var(--k-black);
-  background-color: var(--knicks-blue);
-  box-shadow: 4px 3px 0px var(--k-black);
+  border: 3px solid #000;
+  background-color: #006bb6;
+  box-shadow: 4px 3px 0px #000;
 }
 
 .text-knicks-blue {
@@ -61,11 +60,11 @@ body {
 }
 
 .text-knicks-orange {
-  color: var(--knicks-orange);
+  color: #f58426;
 }
 
 .bg-knicks-orange {
-  background-color: var(--knicks-orange);
+  background-color: #f58426;
   color: #ffffff;
 }
 
@@ -73,52 +72,49 @@ body {
   color: #ffffff;
 }
 
-.neo-brand:hover .glow-orange {
-  color: #000000;
-  text-shadow: none;
-}
 .neo-nav-link {
-  color: var(--k-black) !important;
+  color: #000000 !important;
   font-weight: 700;
   text-transform: uppercase;
   padding: 8px 16px !important;
   margin: 0 6px;
   border: 3px solid transparent;
-  transition: all 0.1s ease-in-out;
+  transition: 0.1s;
 }
 
 .neo-nav-link:hover,
 .neo-nav-link.active {
-  border: 3px solid var(--k-black);
+  border: 3px solid #000;
 
   color: #ffffff !important;
   background-color: var(--knicks-orange);
-  box-shadow: 4px 4px 0px var(--k-black);
+  box-shadow: 4px 4px 0px #000;
   transform: translate(-2px, -2px);
 }
 
 .navbar-toggler.neo-toggler {
-  border: 3px solid var(--k-black);
+  border: 3px solid #000;
   border-radius: 0;
   background-color: #fff;
-  box-shadow: 4px 4px 0px var(--k-black);
+  box-shadow: 4px 4px 0px #000;
 }
 
 .navbar-toggler.neo-toggler:focus {
-  box-shadow: 2px 2px 0px var(--k-black);
+  box-shadow: 2px 2px 0px black;
   transform: translate(2px, 2px);
 }
 
 .neo-card {
-  border: 4px solid var(--k-black);
+  border: 4px solid black;
   background-color: #ffffff;
-  box-shadow: 8px 8px 0px var(--k-black);
-  transition: transform 0.2s ease;
+  margin-top: 100px;
+  box-shadow: 8px 8px 0px black;
+  transition: 0.2s ease;
 }
 
 .neo-card:hover {
   transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0px var(--k-black);
+  box-shadow: 12px 12px 0px black;
 }
 
 .highlight-blue {
@@ -130,8 +126,7 @@ body {
 }
 
 .neo-img {
-  border: 4px solid var(--k-black);
-
+  border: 4px solid black;
   box-shadow: 8px 8px 0px var(--knicks-blue);
   transition: all 0.2s ease;
 }
@@ -142,8 +137,8 @@ body {
 }
 
 .neo-table-wrapper {
-  border: 4px solid var(--k-black);
-  box-shadow: 10px 10px 0px var(--k-black);
+  border: 4px solid black;
+  box-shadow: 10px 10px 0px black;
   background-color: #ffffff;
   margin-bottom: 3rem;
   overflow: hidden;
@@ -156,7 +151,7 @@ body {
 
 th,
 td {
-  border: 3px solid var(--k-black);
+  border: 3px solid #000;
   padding: 20px;
   vertical-align: top;
 }
@@ -172,7 +167,7 @@ td {
 
 .thead-knicks-orange th {
   background-color: var(--knicks-orange);
-  color: var(--k-black);
+  color: #000;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.2rem;
@@ -203,9 +198,9 @@ td {
 }
 
 .neo-badge {
-  border: 2px solid var(--k-black);
+  border: 2px solid #000;
   border-radius: 0;
-  box-shadow: 2px 2px 0px var(--k-black);
+  box-shadow: 2px 2px 0px #000;
   font-weight: bold;
   padding: 5px 10px;
 }
@@ -213,7 +208,7 @@ td {
 .neo-footer {
   color: #ffffff;
   background-color: var(--knicks-blue);
-  border-top: 6px solid var(--k-black);
+  border-top: 6px solid #000;
   padding: 48px 0 32px 0;
   margin-top: 60px;
 }
@@ -225,8 +220,8 @@ td {
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
-  border: 3px solid var(--k-black);
-  box-shadow: 4px 4px 0px var(--k-black);
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px #000;
   transition: all 0.2s ease;
   text-decoration: none;
 }
@@ -243,5 +238,5 @@ td {
 .social-btn:hover {
   transform: translate(-3px, -3px);
   background-color: var(--knicks-orange);
-  box-shadow: 7px 7px 0px var(--k-black);
+  box-shadow: 7px 7px 0px #000;
 }
