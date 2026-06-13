@@ -51,8 +51,8 @@ body {
 }
 
 .neo-brand:hover {
-  background-color: var(--knicks-blue);
   border: 3px solid var(--k-black);
+  background-color: var(--knicks-blue);
   box-shadow: 4px 3px 0px var(--k-black);
 }
 
@@ -89,9 +89,10 @@ body {
 
 .neo-nav-link:hover,
 .neo-nav-link.active {
-  background-color: var(--knicks-orange);
-  color: #ffffff !important;
   border: 3px solid var(--k-black);
+
+  color: #ffffff !important;
+  background-color: var(--knicks-orange);
   box-shadow: 4px 4px 0px var(--k-black);
   transform: translate(-2px, -2px);
 }
@@ -109,8 +110,8 @@ body {
 }
 
 .neo-card {
-  background-color: #ffffff;
   border: 4px solid var(--k-black);
+  background-color: #ffffff;
   box-shadow: 8px 8px 0px var(--k-black);
   transition: transform 0.2s ease;
 }
@@ -121,8 +122,9 @@ body {
 }
 
 .highlight-blue {
-  background-color: var(--knicks-blue);
   color: #ffffff;
+
+  background-color: var(--knicks-blue);
   padding: 0 4px;
   font-weight: bold;
 }
@@ -160,10 +162,10 @@ td {
 }
 
 .thead-knicks-blue th {
-  background-color: var(--knicks-blue);
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 900;
+  background-color: var(--knicks-blue);
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
@@ -209,8 +211,8 @@ td {
 }
 
 .neo-footer {
-  background-color: var(--knicks-blue);
   color: #ffffff;
+  background-color: var(--knicks-blue);
   border-top: 6px solid var(--k-black);
   padding: 48px 0 32px 0;
   margin-top: 60px;
@@ -218,11 +220,11 @@ td {
 
 .social-btn {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 60px;
   height: 60px;
   background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
   border: 3px solid var(--k-black);
   box-shadow: 4px 4px 0px var(--k-black);
   transition: all 0.2s ease;
@@ -239,7 +241,7 @@ td {
 }
 
 .social-btn:hover {
-  background-color: var(--knicks-orange);
   transform: translate(-3px, -3px);
+  background-color: var(--knicks-orange);
   box-shadow: 7px 7px 0px var(--k-black);
 }

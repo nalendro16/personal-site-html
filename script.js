@@ -11,14 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (this.getAttribute('href') === '#') return
 
       e.preventDefault()
-      const targetId = this.getAttribute('href')
-      const targetElement = document.querySelector(targetId)
+      const id_href = this.getAttribute('href')
+      const targetElement = document.querySelector(id_href)
 
       if (targetElement) {
-        const navbarHeight = document.querySelector('.neo-navbar').offsetHeight
-        const elementPosition = targetElement.getBoundingClientRect().top
-        const offsetPosition =
-          elementPosition + window.scrollY - navbarHeight - 20
+        const height = document.querySelector('.neo-navbar').offsetHeight
+        const elementPositions = targetElement.getBoundingClientRect().top
+        const offsetPosition = elementPositions + window.scrollY - height - 20
 
         window.scrollTo({
           top: offsetPosition,
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sections = document.querySelectorAll('section, article')
   const navLinks = document.querySelectorAll('.neo-nav-link')
-
   window.addEventListener('scroll', () => {
     let current = ''
 
